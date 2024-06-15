@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EJERCICIO4</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+</head>
+<body>
+    <main>
+        <header>
+            <div id="estilos">
+                <img src="img/logo-amarillo2.png" alt="">
+            </div>
+        </header>
+        <section id="preguntas">
+            <h2>4.	Dado N calcular: (11)+(22)+(33)+……(NN)</h2>
+        </section>
+        <section>
+            <script>
+                var NN,k,sum,repetitiva,
+
+                acum=0;
+                sum=0;
+
+                NN=parseInt(prompt("Ingresar numero deseado"))
+
+                while (acum<NN*11) {
+                    acum+=11;
+                    repetitiva=acum
+                    sum=acum+sum;
+                    document.write(repetitiva+"<br>")
+                }
+                document.write("La suma de los numeros es: "+sum)
+        
+            </script>
+        </section>
+    </main>
+</body>
+</html>
